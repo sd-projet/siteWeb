@@ -1,0 +1,57 @@
+body {
+    background-color: #343A40;
+    justify-content: center;
+}
+
+.carousel {
+    background-color: #373B3F;
+}
+
+/*Gestion photo caroussel
+------Photo Paysage*/
+
+.photo-pay {
+    max-width: 70%;
+    max-height: 50%;
+    margin: auto;
+}
+
+/*
+------Photo Portrait*/
+
+.photo-por {
+    max-width: 35%;
+    max-height: 20%;
+    margin: auto;
+}
+
+/*--------------------------------*/
+
+.container {
+    margin: 10px;
+
+}
+
+#titre {
+    text-decoration: underline;
+
+}
+
+/* Bouton retour carte */
+.rtn {
+    align-content: left;
+}
+
+#description {
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+a {
+    color: #17A2B8;
+}
+
+#list {
+    list-style: circle;
+}
