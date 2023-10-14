@@ -1,0 +1,8 @@
+html{
+    background-image: url(../../Principal/Images/photo.jpg);
+    background-attachment: fixed;
+    background-size:cover;
+    margin:0;
+    position: relative;
+}
+

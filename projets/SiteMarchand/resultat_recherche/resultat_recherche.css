@@ -1,0 +1,137 @@
+html{
+    background-image: url(../Principal/Images/photo.jpg);
+    background-attachment: fixed;
+    background-size:cover;
+    position: relative;
+    height: 100%;
+}
+
+body{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+h1{
+    font-size: 18px;
+    margin: 0;
+}
+
+h2{
+    font-size: 16px;
+    margin: 0;
+    margin-bottom: 10%;
+}
+
+.noir{
+    background-color: #222224;
+    color: white;
+    border: #1c1c1d 2px solid;
+}
+
+.blanc{
+    background-color: white;
+    color: #222224;
+    border: #dfdfdf 2px solid;
+}
+
+.trait_hrz{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+body #corps{
+    margin-top: 50px;
+    margin-left: 3%;
+    width: 88%;
+    padding: 10px;
+}
+
+body #corps::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+body #space{
+    height: 50px;
+}
+
+body #corps > div{
+    margin-bottom: 10px;
+    position: relative;
+}
+
+body #corps .description{
+    position: absolute;
+    left: 95px;
+    top: 0;
+}
+
+body #corps img{
+    width: 80px;
+}
+
+@media only screen and (min-width:768px){
+    html{
+        height: auto;
+    }
+
+    body #corps img{
+        width: 150px;
+    }
+
+    body #corps{
+        margin-bottom: 120px;
+    }
+
+    h1{
+        font-size: 25px;
+    }   
+
+    h2{
+        font-size: 18px;
+    }
+
+    body #corps .description{
+        left: 170px;
+    }
+}
+
+@media only screen and (min-width:1024px){
+    h1{
+        font-size: 35px;
+    }
+    h2{
+        font-size: 30px;
+    }
+
+    body #corps{
+        margin-bottom: 140px;
+    }
+
+    body #corps img{
+        width: 210px;
+    }
+
+    body #corps .description{
+        left: 230px;
+        font-size: 25px;
+    }
+}
+
+@media only screen and (min-width:1440px){
+    body #corps{
+        margin-top: 120px;
+        margin-bottom: 210px;
+    }
+}

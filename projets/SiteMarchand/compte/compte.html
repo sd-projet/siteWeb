@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Mon compte</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./compte.css">
+        <link rel="stylesheet" href="../Principal/Header.css">
+        <link rel="stylesheet" href="../Principal/Footer.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+	<header>
+            <div><a href="../Accueil.html">BAG'S FOR LIFE </a>
+			</div>
+            
+        </header>
+		<div class="connect">
+			<div id="connexion" class="compte">
+			<p>Se connecter</p>
+				<div class="connexion">
+					<form>
+						<div class="noir">
+							<input type="text" name="myText" placeholder="Identifiant">
+						</div>	
+						<div  class="noir">
+							<input type="password" name="myPwd" placeholder="Mot de passe">
+						</div>
+						<div class="noir"><button>Connexion</button></div>
+					</form>
+				</div>
+			</div>
+			<div id="inscription">
+			<p>S'inscrire</p>
+				<div class="inscription">
+				<form action="inscription" method="POST">
+					<div class="noir"><label for="Mme">Mme.</label><input type="radio" id="Mme." name="Mme."/>
+					 <label for="M">M.</label><input type="radio" id="M." name="M."/></div>
+					<div class="noir"><label for="nom">Nom :</label> <input type="text" id="nom"> </div>
+					<div class="noir"><label for="prénom">Prénom :</label><input type="text" id="prénom"> </div>
+					<div class="noir"><label for="rue">Rue :</label><input type="text" id="rue"> </div>
+					<div class="noir"><label for="ville">Ville :</label><input type="text" id="ville"> </div>
+					<div class="noir"><label for="adresse_mail">Adresse mail :</label><input type="text" id="adresse_mail"> </div>
+				</form>
+				<div class="noir"><button>S'inscrire</button></div>
+				</div>
+			</div>
+		</div>
+        
+    </body>
+
+</html>

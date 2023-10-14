@@ -1,0 +1,207 @@
+html{
+    background-image: url(../Principal/Images/photo.jpg);
+    background-attachment: fixed;
+    background-size:cover;
+    position: relative;
+    height: 100%;
+}
+
+body{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+h1{
+    font-size: 18px;
+    margin: 0;
+}
+
+label{
+    display: block;
+}
+
+.noir{
+    background-color: #222224;
+    color: white;
+    border: #1c1c1d 2px solid;
+}
+
+.blanc{
+    background-color: white;
+    color: #222224;
+    border: #dfdfdf 2px solid;
+}
+
+.trait_hrz{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+body #corps{
+    margin-top: 35px;
+    margin-left: 3%;
+    width: 90%;
+    padding: 5px;
+}
+
+body #corps:after{
+    clear: both;
+    content : "  ";
+    display : block;
+}
+
+body #corps > div{
+    padding: 5px;
+}
+
+body #corps > div:after{
+    clear: both;
+    content : "  ";
+    display : block;
+}
+
+body #corps div div{
+    float: left;
+    font-size: 10px;
+}
+
+body #corps div ul{
+    margin-left: 15px;
+    margin-top: 10px;
+}
+body #corps img{
+    width: 120px;
+}
+
+body #corps #produit{
+    position: relative;
+}
+
+body #corps #total{
+    position: absolute;
+    right: 2%;
+    width: 48%;
+    height: 100px;
+    border: 4px solid #1c1c1e;
+}
+
+body #corps #total div{
+    text-align: center;
+    width: 100%;
+    border: none;
+}
+
+body #corps #total #bas{
+    position: absolute;
+    bottom: 0;
+}
+
+body #corps form div{
+    position: relative;
+    margin-bottom: 10px;
+    padding: 5px;
+    height: 25px;
+}
+
+body #corps form label{
+    position: absolute;
+    left: 5%;
+}
+
+body #corps form input{
+    position: absolute;
+    right: 5%;
+}
+
+@media only screen and (min-width:768px){
+    html{
+        height: auto;
+    }
+
+    h1{
+        font-size: 25px;
+    }
+
+    body #corps{
+        padding: 10px;
+        margin-bottom: 100px;
+    }
+
+    body #corps > div{
+        padding: 10px;
+    }
+
+    body #corps img{
+        width: 220px;
+    }
+
+    body #corps #total{
+        height: 130px;
+        width: 55%;
+        right: 35px;
+        top: 50px;
+    }
+
+    body #corps #total div{
+        font-size: 18px;
+    }
+
+    body #corps form label{
+        font-size: 18px
+    }
+
+    body #corps form div{
+        padding-top: 10px;
+    }
+}
+
+@media only screen and (min-width:1024px){
+    h1{
+        font-size: 30px;
+    }
+
+    body #corps{
+        margin-bottom: 130px;
+    }
+
+    body #corps img{
+        width: 300px;
+    }
+
+    body #corps div{
+        font-size: 20px;
+    }
+
+    body #corps #total{
+        width: 58%;
+        height: 165px;
+        top: 5px;
+    }
+
+    body #corps #total div{
+        font-size: 25px;
+    }
+
+    body #corps form label{
+        font-size: 20px;
+    }
+
+    body #corps form input{
+        width: 200px;
+        right: 10%;
+    }
+}
+
+@media only screen and (min-width:1440px){
+
+}

@@ -1,0 +1,74 @@
+html{
+    background-image: url(../Principal/Images/photo.jpg);
+    background-attachment: fixed;
+    background-size:cover;
+    margin:0;
+    position: relative;
+}
+
+.noir{
+    background-color: #A998B2 ;
+    color: black;
+    border: #1c1c1d 2px solid;
+	padding:5px;
+}
+
+a{
+	text-align:center;
+	vertical-align:middle;
+	text-decoration: none;
+    color: white;
+}
+
+#connexion {
+	float: left;
+	text-align: center;
+	vertical-align: middle;
+	height: 45px;
+	width: 400px;
+	margin-top: 10px;
+	margin-right: 50px;
+	margin-left: 250px;
+	margin-bottom: 5px;
+	
+}
+#inscription{
+	float: left;
+	text-align: center;
+	vertical-align: middle;
+	height: 45px;
+	width: 400px;
+	margin-top: 10px;
+	margin-right: 5px;
+	margin-left: 5px;
+	margin-bottom: 5px;
+}
+
+@media only screen and (min-width:768px){
+    html{
+        height: auto;
+    }
+
+    body .compte{
+        margin-bottom: 90px;
+    }
+}
+
+@media only screen and (min-width:1024px){
+
+    p{
+        font-size: 50px;
+    }
+
+    body .compte{
+        margin-top: 30px;
+        margin-bottom: 130px;
+    }
+}
+
+@media only screen and (min-width:1440px){
+
+    p{
+        font-size: 25px;
+    }
+}

@@ -1,0 +1,43 @@
+footer{
+    background-color: black;
+    padding-top: 40px;
+    padding-bottom: 15px;
+    padding-left: 2%;
+    height: 20px;
+    width: 30%;
+    right: 0;
+	left:68%;
+    bottom: 0px;
+    position: absolute;
+	border-top-left-radius: 4em;
+	border-bottom-left-radius: 4em;
+}
+
+footer > div:first-child{
+    margin-left: 2%;
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+    font-style: italic;
+    text-decoration: underline;
+	position: absolute;
+    right: 40px;
+    bottom: 8px;
+	top:10px;
+}
+
+footer div img{
+    width: 15px;
+}
+
+footer #logo{
+    position: absolute;
+    right: 40px;
+    bottom: 8px;
+	top:40px;
+}
+
+footer #logo div{
+    float: left;
+    margin-right: 10px;
+}
