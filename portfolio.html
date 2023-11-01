@@ -23,25 +23,53 @@
         </div>
     </div>
 </div>
-<header class="header-area header-sticky">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <nav class="main-nav">
-                    <a href="index.html" class="logo">
-                        <img src="assets/images/logo2.png" alt="logo" height="100px" width="20%">
-                    </a>
-                    <ul class="nav">
-                        <li><a href="index.html">Accueil</a></li>
-                        <li><a href="cv.html">CV</a></li>
-                        <li><a href="projet.html">Projets</a></li>
-                        <li><a href="#" class="active">Portfolio</a></li>
-                    </ul>
-                </nav>
-            </div>
+<!-- ***** Header Area Start ***** -->
+<header class="entete">
+    <div class="wrapper">
+        <a href="index.html" class="logo">
+            <h3>Senebou DIARRA</h3>
+        </a>
+        <div class="navbar">
+            <div class="close-nav"><button>×</button></div>
+            <nav class="main-nav">
+                <ul class="nav">
+                    <li><a href="accueil.html">Accueil</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                    <li><a href="projet.html">Projets</a></li>
+                    <li><a href="" class="active">Portfolio</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="menu-bar">
+            <button><i></i></button>
         </div>
     </div>
 </header>
+<script>
+    const theBody = document.querySelector('body');
+    const openNav = document.querySelector('.menu-bar button');
+    const closeNav = document.querySelector('.close-nav button');
+    const Navbar = document.querySelector('.navbar');
+
+    function bodyScroll(){
+        if(Navbar.classList.contains('show')){
+            theBody.classList.add('hide-scroll');
+        }
+        else if(theBody.classList.contains('hide-scroll')){
+            theBody.classList.remove('hide-scroll');
+        }
+    }
+
+    function showHide(){
+        Navbar.classList.toggle('show');
+        bodyScroll();
+    }
+
+    openNav.onclick = showHide;
+    closeNav.onclick = showHide;
+</script>
+
+<!-- ***** Header Area End ***** -->
 <div class="container">
     <div class="row">
         <div class="col-lg-12">
@@ -54,9 +82,9 @@
                                 <br>
                                 <br>
                                 <br>
-                                <h4>Mon portfolio</h4>
+                                <h4 class="presentation">Mon portfolio</h4>
                                 <hr>
-                                <h6>Sur cette page vous trouverez quelques travaux que j'ai pu concevoir.</h6>
+                                <h6 class="presentation">Sur cette page vous trouverez quelques travaux que j'ai pu concevoir.</h6>
                             </div>
                         </div>
                     </div>

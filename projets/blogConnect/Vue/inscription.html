@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<title>Inscription</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../assets/css/style.css">
+	<link rel="stylesheet" href="../assets/css/styleMenu.css">
+
+</head>
+<body>
+<ul>
+	<li><a href="compte/accueilVue.php">Accueil</a></li>
+	<li><a href="../Controleur/connexionControleur.php">Me connecter</a></li>
+	<li><a class="active" href="#">M'inscrire</a></li>
+</ul>
+<!-- [ auth-signup ] start -->
+<div class="auth-wrapper">
+	<div class="auth-content text-center">
+		<div class="card borderless">
+			<div class="row align-items-center text-center">
+				<div class="col-md-12">
+					<div class="card-body">
+						<h4 class="f-w-400">Inscription</h4>
+						<hr>
+						<form method="POST" action="../Controleur/inscriControleur.php">
+							<div class="form-group mb-3">
+								<input type="text" class="form-control" id="pseudo" name="pseudo" placeholder="Pseudo">
+							</div>
+							<div class="form-group mb-3">
+								<input type="text" class="form-control" id="mail" name="mail" placeholder="Mail">
+							</div>
+							<div class="form-group mb-3">
+								<input type="text" class="form-control" id="mail2" name="mail2" placeholder="Confirmer votre mail">
+							</div>
+							<div class="form-group mb-4">
+								<input type="password" class="form-control" id="mdp" name="mdp" placeholder="Mot de passe">
+							</div>
+							<div class="form-group mb-4">
+								<input type="password" class="form-control" id="mdp2" name="mdp2" placeholder="Confirmer votre mot de passe">
+							</div>
+							<input type="submit" class="btn btn-primary btn-block mb-4" name="forminscription" value="Je m'inscris" />
+						</form>
+						<hr>
+						<p class="mb-2">J'ai déjà un compte ? <a href="../Controleur/connexionControleur.php" class="f-w-400">Me connecter</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- [ auth-signup ] end -->
+
+</body>
+
+</html>

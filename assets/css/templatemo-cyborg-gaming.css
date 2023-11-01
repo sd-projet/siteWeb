@@ -12,56 +12,190 @@ Table of contents
 09. footer
 
 --------------------------------------------- */
-/* 
+/*
 ---------------------------------------------
 font & reset css
---------------------------------------------- 
+---------------------------------------------
 */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900");
+
 /*
 ---------------------------------------------
 reset
---------------------------------------------- 
+---------------------------------------------
 */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div,
-pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q,
-s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
-figure, header, nav, section, article, aside, footer, figcaption {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+div,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+figure,
+header,
+nav,
+section,
+article,
+aside,
+footer,
+figcaption {
   margin: 0;
   padding: 0;
   border: 0;
   outline: 0;
 }
 
-.professionnel{
-  color: #ffffff;
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  background-color: #1e1e1e;
+  font-size: 16px;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: #CCC;
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: #2b23a5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #2c3f67;
+  font-weight: 700;
+}
+
+h6 {
+  line-height: 2em;
+}
+
+ul {
+  margin-bottom: 0px;
+}
+
+p {
+  font-size: 15px;
+  line-height: 30px;
+  color: #fff;
 }
 
 img {
-  width: 100%; /* need to overwrite inline dimensions */
+  width: 75%;
+  overflow: hidden;
+}
+
+*,
+*::before,
+*::after {
+
+  box-sizing: border-box;
+
+}
+
+
+.professionnel {
+  color: #ffffff;
+}
+
+.professionnel2 {
+  color: #ffffff;
+  float: right;
+  margin-top: 3px;
+  margin-left: 10px;
+}
+
+img {
+  width: 100%;
+  /* need to overwrite inline dimensions */
   height: auto;
 }
+
 h2 {
   margin-bottom: .5em;
 }
+
 .grid-container {
   display: grid;
   /*grid-template-columns: repeat(3, minmax(50px, 1fr));*/
-  grid-template-columns: repeat(3,70px);
+  grid-template-columns: repeat(2, 70px);
   grid-gap: 3em;
+  justify-content: center;
 }
 
 .grid-container2 {
-  display: grid;
-  grid-template-columns: repeat(3,80px);
+  display: inline-table;
+  grid-template-columns: repeat(3, 80px);
   grid-gap: 3em;
+  left: 20px;
+  width: 20%;
+
 }
 
 .encadreInteret {
-
-  margin: 10px;
-  padding: 30px;
-  display: inline-block;
+  margin: 0 auto;
+  padding: 35px;
+  display: block;
   background-color: rgba(255, 255, 255, 0.17);
   box-sizing: border-box;
   border-style: inset;
@@ -75,7 +209,6 @@ h2 {
 
 .location-image {
   line-height: 0;
-  overflow: hidden;
 }
 
 .location-image img {
@@ -133,68 +266,23 @@ html[xmlns] .clearfix {
   height: 1%;
 }
 
-ul, li {
+ul,
+li {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-header, nav, section, article, aside, footer, hgroup {
+header,
+nav,
+section,
+article,
+aside,
+footer,
+hgroup {
   display: block;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-html, body {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  background-color: #1e1e1e;
-  font-size: 16px;
-  -ms-text-size-adjust: 100%;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  color: #CCC;
-  text-decoration: none !important;
-}
-a:hover {
-  color: #2b23a5;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  color: #2c3f67;
-  font-weight: 700;
-}
-h6 {
-  line-height: 2em;
-}
-
-ul {
-  margin-bottom: 0px;
-}
-
-p {
-  font-size: 15px;
-  line-height: 30px;
-  color: #fff;
-}
-
-img {
-  width: 100%;
-  overflow: hidden;
-}
-
-*,*::before,*::after{
-
-  box-sizing: border-box;
-
-}
 
 /*
 ---------------------------------------------
@@ -203,14 +291,19 @@ Global Styles
 */
 html,
 body {
-  background: rgb(238,174,202);
-  background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  background: rgb(238, 174, 202);
+  background: linear-gradient(90deg, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
   font-family: 'Poppins', sans-serif;
 }
-@keyframes anim-demo{
-  to{
-    filter:hue-rotate(360deg)
+
+@keyframes anim-demo {
+  to {
+    filter: hue-rotate(360deg)
   }
+}
+
+.entete {
+  background: rgba(255, 255, 255, 0.81);
 }
 
 body .page-content {
@@ -289,7 +382,7 @@ p {
   color: #666;
 }
 
-.border-no-active a:hover{
+.border-no-active a:hover {
   border-color: #666;
   color: #666;
   background-color: transparent;
@@ -336,6 +429,7 @@ Pre-loader Style
   -webkit-transition: opacity 0.25s ease;
   transition: opacity 0.25s ease;
 }
+
 .js-preloader.loaded {
   opacity: 0;
   visibility: hidden;
@@ -348,7 +442,8 @@ Style video
 -------------------------
 */
 
-#videoContainer , #videoContainer2{
+#videoContainer,
+#videoContainer2 {
   display: none;
   position: fixed;
   top: 50%;
@@ -360,7 +455,8 @@ Style video
 }
 
 /* Styles pour fermer la vidéo */
-#fermerVideo, #fermerVideo2 {
+#fermerVideo,
+#fermerVideo2 {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -416,6 +512,7 @@ Style video
   -webkit-animation: dot 2.8s infinite;
   animation: dot 2.8s infinite;
 }
+
 .preloader-inner .dots {
   -webkit-transform: translateX(0);
   transform: translateX(0);
@@ -443,12 +540,12 @@ Header Style
 
 .background-header {
   background-color: #fff !important;
-  height: 70px!important;
-  position: fixed!important;
-  top: 0!important;
+  height: 70px !important;
+  position: fixed !important;
+  top: 0 !important;
   left: 0;
   right: 0;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.15)!important;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15) !important;
   -webkit-transition: all .5s ease 0s;
   -moz-transition: all .5s ease 0s;
   -o-transition: all .5s ease 0s;
@@ -505,6 +602,7 @@ Header Style
   height: 18px;
   font-size: 16px;
 }
+
 .header-area .main-nav .logo {
   flex-basis: 25%;
   margin-right: 5%;
@@ -513,6 +611,7 @@ Header Style
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
+
 .header-area .main-nav .logo img {
   width: 140px;
 }
@@ -541,6 +640,7 @@ Header Style
   position: relative;
   z-index: 999;
 }
+
 .header-area .main-nav .nav li {
   padding-left: 10px;
   padding-right: 10px;
@@ -562,6 +662,7 @@ Header Style
   border-radius: 18px;
   letter-spacing: .3px;
 }
+
 .header-area .main-nav .nav li:last-child a img {
   max-width: 30px;
   border-radius: 50%;
@@ -577,6 +678,7 @@ Header Style
 .header-area .main-nav .nav li a.active {
   color: #ffffff !important;
 }
+
 .background-header .main-nav .nav li:hover a,
 .background-header .main-nav .nav li a.active {
   color: #fff;
@@ -588,6 +690,7 @@ Header Style
   position: relative;
   padding-right: 15px;
 }
+
 .header-area .main-nav .menu-trigger {
   cursor: pointer;
   display: block;
@@ -619,6 +722,7 @@ Header Style
   height: 2px;
   left: 0;
 }
+
 .background-header .main-nav .menu-trigger span,
 .background-header .main-nav .menu-trigger span:before,
 .background-header .main-nav .menu-trigger span:after {
@@ -686,6 +790,7 @@ Header Style
   transform: translateY(6px) translateX(1px) rotate(45deg);
   background-color: #2b23a5;
 }
+
 .background-header .main-nav .menu-trigger.active span:before {
   background-color: #2b23a5;
 }
@@ -697,6 +802,7 @@ Header Style
   transform: translateY(-6px) translateX(1px) rotate(-45deg);
   background-color: #2b23a5;
 }
+
 .background-header .main-nav .menu-trigger.active span:after {
   background-color: #2b23a5;
 }
@@ -734,20 +840,20 @@ Banner Style
   padding: 80px 60px;
 }
 
-.main-banner h6 .main-banner2{
+.main-banner h6 .main-banner2 {
   font-size: 18px;
   color: #fff;
   font-weight: 400;
   margin-bottom: 25px;
 }
 
-.main-banner h4 .main-banner2{
+.main-banner h4 .main-banner2 {
   font-size: 45px;
   text-transform: uppercase;
   margin-bottom: 25px;
 }
 
-.main-banner h4 em .main-banner2{
+.main-banner h4 em .main-banner2 {
   font-style: normal;
   color: #ec6090;
 }
@@ -761,8 +867,8 @@ Most Popular Style
 .most-popular {
   margin-top: 60px;
   padding: 30px;
-  border-width:3px;
-  border-style:groove;
+  border-width: 3px;
+  border-style: groove;
   border-color: #2c3f67;
   border-radius: 23px;
 }
@@ -820,8 +926,8 @@ Most Popular Style
 .banner-first {
   margin-top: 40px;
   padding: 30px;
-  border-width:11px;
-  border-style:solid;
+  border-width: 11px;
+  border-style: solid;
   border-color: #ffffff;
   border-radius: 23px;
   height: 200px;
@@ -830,8 +936,16 @@ Most Popular Style
 #posText {
   margin: 0 auto;
   width: auto;
-  margin-left: 75px;
 }
+
+.h6 #posText {
+  font-size: 45px;
+}
+
+.p #posText {
+  font-size: 17px;
+}
+
 
 /*
 ---------------------------------------------
@@ -842,8 +956,8 @@ Gaming Library Style
 .gaming-library {
   margin-top: 60px;
   padding: 30px;
-  border-width:3px;
-  border-style:groove;
+  border-width: 3px;
+  border-style: groove;
   border-color: #2c3f67;
   border-radius: 23px;
 }
@@ -900,7 +1014,7 @@ Gaming Library Style
 
 
 .titreProjet .item ul li h4 {
-  font-size: 30px;
+  font-size: 28px;
   margin-bottom: 5px;
 }
 
@@ -915,8 +1029,8 @@ Featured Games Style
 
   margin-top: 10px;
   padding: 30px;
-  border-width:3px;
-  border-style:groove;
+  border-width: 3px;
+  border-style: groove;
   border-color: #2c3f67;
   border-radius: 23px;
 }
@@ -943,7 +1057,7 @@ Featured Games Style
 }
 
 .featured-games .item .thumb .hover-effect h6 {
-  background-color: rgba(31,33,34,0.95);
+  background-color: rgba(31, 33, 34, 0.95);
   display: inline-block;
   color: #2c3f67;
   font-weight: 600;
@@ -998,7 +1112,7 @@ Featured Games Style
 }
 
 .featured-games .owl-nav .owl-prev span,
-.featured-games .owl-nav .owl-next span  {
+.featured-games .owl-nav .owl-next span {
   font-size: 36px;
   display: inline-block;
   color: #666;
@@ -1016,8 +1130,8 @@ Featured Games Style
   min-height: 567px;
   margin-top: 10px;
   padding: 30px;
-  border-width:3px;
-  border-style:groove;
+  border-width: 3px;
+  border-style: groove;
   border-color: #2c3f67;
   border-radius: 23px;
 }
@@ -1072,7 +1186,7 @@ Featured Games Style
   padding-bottom: 28px;
 }
 
-.top-downloaded .text-button  {
+.top-downloaded .text-button {
   text-align: center;
 }
 
@@ -1157,6 +1271,7 @@ body {
   overflow-x: hidden;
 }
 
+/*
 @media (max-width: 767px) {
   body .page-content {
     padding: 0px 30px;
@@ -1362,3 +1477,85 @@ body {
     height: 0px;
   }
 }
+*/
+
+/*
+@media (max-width: 768px) {
+  .main-nav {
+    min-height: 50px;
+  }
+  .logo img {
+    width: 100px; /* Ajustez la taille du logo selon vos besoins */
+/*}
+  .nav {
+    flex-basis: 100%; /* Pour que les éléments de la barre de navigation prennent toute la largeur */
+/*  text-align: center; /* Centrez les éléments de la barre de navigation */
+/*}
+  .nav li {
+    display: block; /* Affichez chaque élément de la barre de navigation sur une nouvelle ligne */
+/* margin: 5px 0; /* Espacement entre les éléments de la barre de navigation */
+/* }
+  #posText {
+    margin: 0 auto;
+    width: auto;
+  }
+  .h6 #posText{
+    font-size: 20px;
+  }
+  .p #posText{
+    font-size: 15px;
+  }
+}*/
+
+
+/*@media (max-width: 768px) {
+
+  .main-banner h6 {
+    font-size: 20px; /* Ajustez la taille de la police */
+/* margin-bottom: 15px;
+  }
+  .main-banner h4 {
+    font-size: 30px; /* Ajustez la taille de la police */
+/*margin-bottom: 15px;
+  }
+  .main-banner h4 em {
+    font-size: 18px; /* Ajustez la taille de la police */
+/* }
+}*/
+
+/*@media (max-width: 768px) {
+  .gaming-library .item {
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  .gaming-library .item h4 {
+    font-size: 18px;
+    margin-top: 15px;
+  }
+  .gaming-library .item span {
+    font-size: 14px;
+  }
+}*/
+
+/*@media (max-width: 768px) {
+  .most-popular .item {
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  .most-popular .item h4 {
+    font-size: 18px;
+    margin-top: 15px;
+  }
+  .most-popular .item span {
+    font-size: 14px;
+  }
+  .most-popular .item ul {
+    float: none; /* Réinitialisez la mise en page flottante */
+/*margin-top: 10px;
+    text-align: center; /* Centrez les éléments de la liste */
+/*}
+  .most-popular .item ul li {
+    display: block; /* Affichez chaque élément de la liste sur une nouvelle ligne */
+/* margin-top: 5px;
+  }
+}*/

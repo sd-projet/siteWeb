@@ -1,0 +1,28 @@
+.container3 {
+    display: flex;
+    align-items: center;
+    object-fit: cover;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.image {
+    width: 60px; /* Ajustez la taille de l'image selon vos besoins */
+    object-fit: cover;
+
+}
+
+/* Vous pouvez également ajouter d'autres styles pour le texte et l'image selon vos besoins. */
+
+.container5 {
+    width: 200px; /* Ajustez la largeur de la div selon vos besoins */
+    border: 1px solid #000; /* Facultatif - ajout d'une bordure pour mieux visualiser la div */
+    overflow: hidden; /* Empêche le contenu de déborder de la div */
+}
+
+.text5 {
+    word-wrap: break-word; /* Permet au texte de continuer à la ligne s'il est trop long */
+    overflow: hidden; /* Masque le texte qui dépasse */
+}
+
+/* Vous pouvez également ajouter d'autres styles pour le texte selon vos besoins. */

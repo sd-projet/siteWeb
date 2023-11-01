@@ -20,6 +20,9 @@
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="assets/css/test.css">
+    <link rel="stylesheet" href="assets/css/test2.css">
+
     <!--
 
     TemplateMo 579 Cyborg Gaming
@@ -45,28 +48,51 @@
 <!-- ***** Preloader End ***** -->
 
 <!-- ***** Header Area Start ***** -->
-<header class="header-area header-sticky">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <nav class="main-nav">
-                    <!-- ***** Logo Start ***** -->
-                    <a href="index.html" class="logo">
-                        <img src="assets/images/logo2.png" alt="logo" height="100px" width="20%">
-                    </a>
-                    <!-- ***** Menu Start ***** -->
-                    <ul class="nav">
-                        <li><a href="index.html" >Accueil</a></li>
-                        <li><a href="#" class="active">CV</a></li>
-                        <li><a href="projet.html">Projets</a></li>
-                        <li><a href="portfolio.html">Portfolio </a></li>
-                    </ul>
-                    <!-- ***** Menu End ***** -->
-                </nav>
-            </div>
+<header class="entete">
+    <div class="wrapper">
+        <a href="index.html" class="logo">
+            <h3>Senebou DIARRA</h3>
+        </a>
+        <div class="navbar">
+            <div class="close-nav"><button>×</button></div>
+            <nav class="main-nav">
+                <ul class="nav">
+                    <li><a href="accueil.html">Accueil</a></li>
+                    <li><a href="#" class="active">CV</a></li>
+                    <li><a href="projet.html">Projets</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="menu-bar">
+            <button><i></i></button>
         </div>
     </div>
 </header>
+<script>
+    const theBody = document.querySelector('body');
+    const openNav = document.querySelector('.menu-bar button');
+    const closeNav = document.querySelector('.close-nav button');
+    const Navbar = document.querySelector('.navbar');
+
+    function bodyScroll(){
+        if(Navbar.classList.contains('show')){
+            theBody.classList.add('hide-scroll');
+        }
+        else if(theBody.classList.contains('hide-scroll')){
+            theBody.classList.remove('hide-scroll');
+        }
+    }
+
+    function showHide(){
+        Navbar.classList.toggle('show');
+        bodyScroll();
+    }
+
+    openNav.onclick = showHide;
+    closeNav.onclick = showHide;
+</script>
+
 <!-- ***** Header Area End ***** -->
 
 <div class="container">
@@ -74,23 +100,22 @@
         <div class="col-lg-12">
             <div class="page-content">
                 <!-- ***** Banner Start ***** -->
-                <div class="main-banner2">
+                <div class="main-banner">
                     <div class="row">
-                        <div class="col-lg-7">
+                        <div class="col-lg-7" id="posText2">
                             <div class="header-text">
                                 <br>
                                 <br>
+                                    <h3 class="presentation">Curriculum Vitae</h3>
+                                    <h4 class="presentation">Senebou DIARRA</h4>
+                                    <hr>
+                                    <h6 class="presentation">E-mail : seneboudiarrapro@gmail.com </h6>
 
-                                <h3>Curriculum Vitae</h3>
-                                <h4>Senebou DIARRA</h4>
-                                <hr>
-                                <h6>E-mail : seneboudiarrapro@gmail.com </h6>
+                                    <h6 class="presentation"> Téléphone : 07 63 86 89 72 </h6>
 
-                                <h6> Téléphone : 07 63 86 89 72 </h6>
-
-                                <h6>LinkedIn :
-                                    <a href="https://www.linkedin.com/in/senebou-diarra-4049481ba/">https://www.linkedin.com/in/senebou-diarra-4049481ba/</a>
-                                </h6>
+                                    <h6 class="presentation">LinkedIn :
+                                        <a href="https://www.linkedin.com/in/senebou-diarra-4049481ba/">https://www.linkedin.com/in/senebou-diarra-4049481ba/</a>
+                                    </h6>
                             </div>
                         </div>
                     </div>
@@ -185,23 +210,26 @@
                                 <h4>Langues </h4>
                             </div>
                             <div class="encadreInteret">
-                                <div class="grid-container2">
-                                    <div class="location-image">
-                                        <img width="300" height="169" src="./assets/images/anglais.png" alt="anglais">
-                                        <p class="professionnel">                            </p>
-                                        <p class="professionnel">Niveau B2</p>
+                                <div class="container3">
+                                    <img src="./assets/images/anglais.png" class="image">
+                                    <div class="text">
+                                        <p class="professionnel2">  Niveau B2</p>
                                     </div>
-
-                                    <div class="location-image">
-                                        <img width="300" height="169" src="./assets/images/espagne.png" alt="espagne">
-                                        <p class="professionnel">Niveau Scolaire</p>
+                                </div>
+                                <br>
+                                <div class="container3">
+                                    <img src="./assets/images/espagne.png" class="image">
+                                    <div class="text">
+                                        <p class="professionnel2">  Niveau scolaire</p>
                                     </div>
+                                </div>
+                                <br>
 
-                                    <div class="location-image">
-                                        <img width="300" height="169" src="./assets/images/france.png" alt="france">
-                                        <p class="professionnel">Langue maternelle</p>
+                                <div class="container3">
+                                    <img src="./assets/images/france.png" class="image">
+                                    <div class="text">
+                                        <p class="professionnel2">  Langue maternelle</p>
                                     </div>
-
                                 </div>
                             </div>
                             <div class="heading-section">
