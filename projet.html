@@ -6,7 +6,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 
     <title>Site de Senebou</title>
 
@@ -22,343 +23,363 @@
     <link rel="stylesheet" href="assets/css/test.css">
     <link rel="stylesheet" href="assets/css/test2.css">
 
-    <!--
-
-    TemplateMo 579 Cyborg Gaming
-
-    https://templatemo.com/tm-579-cyborg-gaming
-
-    -->
 </head>
 
 <body>
 
-<!-- ***** Preloader Start ***** -->
-<div id="js-preloader" class="js-preloader">
-    <div class="preloader-inner">
-        <span class="dot"></span>
-        <div class="dots">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </div>
-</div>
-<!-- ***** Preloader End ***** -->
-
-
-<!-- ***** Header Area Start ***** -->
-<header class="entete">
-    <div class="wrapper">
-        <a href="index.html" class="logo">
-            <h3>Senebou DIARRA</h3>
-        </a>
-        <div class="navbar">
-            <div class="close-nav"><button>×</button></div>
-            <nav class="main-nav">
-                <ul class="nav">
-                    <li><a href="accueil.html" >Accueil</a></li>
-                    <li><a href="cv.html">CV</a></li>
-                    <li><a href="#" class="active">Projets</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="menu-bar">
-            <button><i></i></button>
-        </div>
-    </div>
-</header>
-<script>
-    const theBody = document.querySelector('body');
-    const openNav = document.querySelector('.menu-bar button');
-    const closeNav = document.querySelector('.close-nav button');
-    const Navbar = document.querySelector('.navbar');
-
-    function bodyScroll(){
-        if(Navbar.classList.contains('show')){
-            theBody.classList.add('hide-scroll');
-        }
-        else if(theBody.classList.contains('hide-scroll')){
-            theBody.classList.remove('hide-scroll');
-        }
-    }
-
-    function showHide(){
-        Navbar.classList.toggle('show');
-        bodyScroll();
-    }
-
-    openNav.onclick = showHide;
-    closeNav.onclick = showHide;
-</script>
-<!-- ***** Header Area End ***** -->
-
-<div class="container">
-    <div class="row">
-        <div class="col-lg-12">
-            <div class="page-content">
-                <!-- ***** Banner Start ***** -->
-                <div class="main-banner">
-                    <div class="row">
-                        <div class="col-lg-7">
-                            <div class="header-text">
-                                <br>
-                                <br>
-                                <br>
-                                <br>
-                                <h4 class="presentation">Mes Projets</h4>
-                                <hr>
-                                <h6 class="presentation">Sur cette page, vous trouverez quelques projets que j'ai pu réaliser.</h6>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="gaming-library">
-                            <div class="titreProjet">
-                                <div class="item">
-                                    <ul id="maListe1">
-                                        <li>
-                                            <div class="heading-section">
-                                                <h4>Site web : <em> PhotoLocator</em></h4>
-                                            </div>
-                                            <p class="professionnel">
-                                                Site web représentant une map regroupant des photographies sous forme de popups avec description des images.
-                                                <br>
-                                                Langages utilisés : HTML | CSS | JS
-
-                                            </p>
-                                        </li>
-                                        <li><div class="main-border-button">
-                                                <a href="./projets/Photolocator/index.html" target="_blank" rel="noopener noreferrer">
-                                                    Voir</a>
-                                            </div></li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="titreProjet">
-                                <div class="item">
-                                    <ul id="maListe2">
-                                        <li>
-                                            <div class="heading-section">
-                                                <h4>Site web : <em> Blog</em></h4>
-                                            </div>
-                                            <p class="professionnel">
-                                                Blog ou l'on peut consulter ou ajouter des posts et commentaires
-                                                <br>
-                                                Langages et frameworks utilisés : PHP | Symfony
-                                            </p>
-                                        </li>
-                                        <li><div class="main-border-button">
-                                            <a href="./projets/Blog/public/index.php" target="_blank" rel="noopener noreferrer">
-                                                Voir</a>
-                                        </div></li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="titreProjet">
-                                <div class="item">
-                                    <ul id="maListe3">
-                                        <li>
-                                            <div class="heading-section">
-                                                <h4>Site web : <em> Blog Connect</em></h4>
-                                            </div>
-                                            <p class="professionnel">
-                                                Blog diffusant des publications ainsi qu'une lecture de commentaires. L'utilisateur souhaitant publier doit avant tout s'inscrire.
-                                                <br>
-                                                Langages utilisés : PHP | HTML | CSS
-                                            </p>
-                                        </li>
-                                        <li><div class="main-border-button">
-                                            <a href="./projets/Blog/public/index.php" target="_blank" rel="noopener noreferrer">
-                                                Voir</a>
-                                        </div></li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="titreProjet">
-                                <div class="item">
-                                    <ul id="maListe4">
-                                        <li>
-                                            <div class="heading-section">
-                                                <h4>Site web : <em> Bag's for life </em></h4>
-                                            </div>
-                                            <p class="professionnel"> Dans le cadre d'un projet, j'ai du réaliser un site marchand non fonctionnel.
-                                                <br>
-                                                Langages utilisés : HTML | CSS
-                                            </p>
-                                        </li>
-                                        <li><div class="main-border-button">
-                                            <a href="./projets/SiteMarchand/Accueil.html" target="_blank" rel="noopener noreferrer">
-                                                Voir</a>
-                                        </div></li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="titreProjet">
-                                <div class="item">
-                                    <ul id="maListe5">
-                                        <li>
-                                            <div class="heading-section">
-                                                <h4>Application : <em>Open de Tennis </em></h4>
-                                            </div>
-                                            <p class="professionnel">
-                                                Coté administrateur : Application permettant d'ajouter / mofifier / supprimer des matchs, des billets, ...
-                                                <br>
-                                                Coté client : Consulter le planning des matchs de tennis, de réserver des billets,...
-                                                <br>
-                                                Langages utilisés : Java | HTML | CSS | SQL
-                                            </p>
-                                        </li>
-                                        <li><div class="main-border-button">
-                                            <a id="lienVideo3" href="#" target="_blank" rel="noopener noreferrer">
-                                                Voir</a>
-                                        </div></li>
-                                    </ul>
-
-                                </div>
-                            </div>
-
-
-                            <div class="titreProjet">
-                                <div class="item">
-                                    <ul id="maListe6">
-                                        <li>
-                                            <div class="heading-section">
-                                                <h4>Application : <em>Détection d'images </em></h4>
-                                            </div>
-                                            <p class="professionnel">
-                                                Application permettant de détecter les objets présent sur une image.
-                                                <br>
-                                                Langages utilisés : Python
-                                            </p>
-                                        </li>
-                                        <li><div class="main-border-button">
-                                            <a id="lienVideo" href="#" target="_blank" rel="noopener noreferrer">
-                                                Voir</a>
-                                        </div></li>
-                                    </ul>
-                                    <div id="videoContainer">
-                                        <span id="fermerVideo">Fermer</span>
-                                        <video id="maVideo" width="800" height="400" controls>
-                                            <source src="./projets/appli.mp4" type="video/mp4">
-                                            Votre navigateur ne supporte pas la lecture de vidéos.
-                                        </video>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="titreProjet">
-                                <div class="item">
-                                    <ul id="maListe7">
-                                        <li>
-                                            <div class="heading-section">
-                                                <h4>Application :<em> Résolution d'un modèle épidémiologique SIR et quelques variantes </em></h4>
-                                            </div>
-                                            <p class="professionnel"> Développement d'une solution informatique qui nécessite de résoudre
-                                                les équations d'un modèle épidémiologique SIR et quelques variantes.
-                                                <br>
-                                                Langages utilisés : C++ | Python (matplotlib)
-                                            </p>
-                                        </li>
-                                        <li><div class="main-border-button">
-                                            <a id="lienVideo2" href="#" target="_blank" rel="noopener noreferrer">
-                                                Voir</a>
-                                        </div></li>
-                                    </ul>
-                                    <div id="videoContainer2">
-                                        <span id="fermerVideo2">Fermer</span>
-                                        <video id="maVideo2" width="800" height="400" controls>
-                                            <source src="./projets/videoVarianteSIR_1.mp4" type="video/mp4">
-                                            Votre navigateur ne supporte pas la lecture de vidéos.
-                                        </video>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <script>
-                                function changerStyleListe() {
-                                    const largeurPage = window.innerWidth;
-
-                                    if (largeurPage < 600) {
-                                        // Sélectionnez les éléments qui correspondent au sélecteur CSS
-                                        const items = document.querySelectorAll('.gaming-library .item ul li');
-
-                                        items.forEach(item => {
-                                            item.style.display = 'block';
-                                            item.style.width = '100%';
-                                        });
-
-                                        // Sélectionnez le dernier enfant de chaque liste et modifiez son style
-                                        const dernierEnfantLi1 = document.querySelector('#maListe1 li:last-child');
-                                        const dernierEnfantLi2 = document.querySelector('#maListe2 li:last-child');
-                                        const dernierEnfantLi3 = document.querySelector('#maListe3 li:last-child');
-                                        const dernierEnfantLi4 = document.querySelector('#maListe4 li:last-child');
-                                        const dernierEnfantLi5 = document.querySelector('#maListe5 li:last-child');
-                                        const dernierEnfantLi6 = document.querySelector('#maListe6 li:last-child');
-                                        const dernierEnfantLi7 = document.querySelector('#maListe7 li:last-child');
-
-
-                                        if (dernierEnfantLi1) {
-                                            dernierEnfantLi1.style.textAlign = 'center';
-                                        }
-                                        if (dernierEnfantLi2) {
-                                            dernierEnfantLi2.style.textAlign = 'center';
-                                        }
-                                        if (dernierEnfantLi3) {
-                                            dernierEnfantLi3.style.textAlign = 'center';
-                                        }
-                                        if (dernierEnfantLi4) {
-                                            dernierEnfantLi4.style.textAlign = 'center';
-                                        }
-                                        if (dernierEnfantLi5) {
-                                            dernierEnfantLi5.style.textAlign = 'center';
-                                        }
-                                        if (dernierEnfantLi6) {
-                                            dernierEnfantLi6.style.textAlign = 'center';
-                                        }
-                                        if (dernierEnfantLi7) {
-                                            dernierEnfantLi7.style.textAlign = 'center';
-                                        }
-                                    }
-                                }
-
-
-                                // Écouter les événements de redimensionnement de la fenêtre pour mettre à jour le style
-                                window.addEventListener('resize', changerStyleListe);
-
-                                // Appeler la fonction au chargement de la page pour gérer le style initial
-                                changerStyleListe();
-                            </script>
-
-
-                        </div>
-                    </div>
-                </div>
-                <!-- ***** Featured Games End ***** -->
+    <!-- ***** Preloader Start ***** -->
+    <div id="js-preloader" class="js-preloader">
+        <div class="preloader-inner">
+            <span class="dot"></span>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
     </div>
-</div>
-<!-- Scripts -->
-<!-- Bootstrap core JavaScript -->
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!-- ***** Preloader End ***** -->
 
-<script src="assets/js/isotope.min.js"></script>
-<script src="assets/js/owl-carousel.js"></script>
-<script src="assets/js/tabs.js"></script>
-<script src="assets/js/popup.js"></script>
-<script src="assets/js/custom.js"></script>
-<script src="assets/js/video.js"></script>
-<script src="assets/js/videoPop.js"></script>
+    <!-- ***** Header Area Start ***** -->
+    <header class="entete">
+        <div class="wrapper">
+            <a href="index.html" class="logo">
+                <h3>Senebou DIARRA</h3>
+            </a>
+            <div class="navbar">
+                <div class="close-nav"><button>×</button></div>
+                <nav class="main-nav">
+                    <ul class="nav">
+                        <li><a href="accueil.html">Accueil</a></li>
+                        <li><a href="cv.html">CV</a></li>
+                        <li><a href="#" class="active">Projets</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="menu-bar">
+                <button><i></i></button>
+            </div>
+        </div>
+    </header>
+    <script>
+        const theBody = document.querySelector('body');
+        const openNav = document.querySelector('.menu-bar button');
+        const closeNav = document.querySelector('.close-nav button');
+        const Navbar = document.querySelector('.navbar');
+
+        function bodyScroll() {
+            if (Navbar.classList.contains('show')) {
+                theBody.classList.add('hide-scroll');
+            }
+            else if (theBody.classList.contains('hide-scroll')) {
+                theBody.classList.remove('hide-scroll');
+            }
+        }
+
+        function showHide() {
+            Navbar.classList.toggle('show');
+            bodyScroll();
+        }
+
+        openNav.onclick = showHide;
+        closeNav.onclick = showHide;
+    </script>
+    <!-- ***** Header Area End ***** -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="page-content">
+                    <!-- ***** Banner Start ***** -->
+                    <div class="main-banner">
+                        <div class="row">
+                            <div class="col-lg-7">
+                                <div class="header-text">
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <h4 class="presentation">Mes Projets</h4>
+                                    <hr>
+                                    <h6 class="presentation">Sur cette page, vous trouverez quelques projets que j'ai pu
+                                        réaliser.</h6>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="gaming-library">
+                                <div class="titreProjet">
+                                    <div class="item">
+                                        <ul id="maListe1">
+                                            <li>
+                                                <div class="heading-section">
+                                                    <h4>Site web : <em> PhotoLocator</em></h4>
+                                                </div>
+                                                <p class="professionnel">
+                                                    Site web représentant une map regroupant des photographies sous
+                                                    forme de popups avec description des images.
+                                                    <br>
+                                                    Langages utilisés : HTML | CSS | JS
+
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <div class="main-border-button">
+                                                    <a href="./projets/Photolocator/index.html" target="_blank"
+                                                        rel="noopener noreferrer">
+                                                        Voir</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="titreProjet">
+                                    <div class="item">
+                                        <ul id="maListe2">
+                                            <li>
+                                                <div class="heading-section">
+                                                    <h4>Site web : <em> Blog</em></h4>
+                                                </div>
+                                                <p class="professionnel">
+                                                    Blog ou l'on peut consulter ou ajouter des posts et commentaires.
+                                                <br>
+                                                Langages et frameworks utilisés : PHP | Symfony
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <div class="main-border-button">
+                                                    <a href="#" target="_blank" rel="noopener noreferrer">
+                                                        A venir </a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="titreProjet">
+                                    <div class="item">
+                                        <ul id="maListe3">
+                                            <li>
+                                                <div class="heading-section">
+                                                    <h4>Site web : <em> Blog Connect</em></h4>
+                                                </div>
+                                                <p class="professionnel">
+                                                    Blog diffusant des publications ainsi qu'une lecture de
+                                                    commentaires. L'utilisateur souhaitant publier doit avant tout
+                                                    s'inscrire.
+                                                    <br>
+                                                    Langages utilisés : PHP | HTML | CSS
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <div class="main-border-button">
+                                                    <a href="#" target="_blank"
+                                                        rel="noopener noreferrer">
+                                                        A venir</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="titreProjet">
+                                    <div class="item">
+                                        <ul id="maListe4">
+                                            <li>
+                                                <div class="heading-section">
+                                                    <h4>Site web : <em> Bag's for life </em></h4>
+                                                </div>
+                                                <p class="professionnel"> Dans le cadre d'un projet, j'ai du réaliser un
+                                                    site marchand non fonctionnel.
+                                                    <br>
+                                                    Langages utilisés : HTML | CSS
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <div class="main-border-button">
+                                                    <a href="./projets/SiteMarchand/Accueil.html" target="_blank"
+                                                        rel="noopener noreferrer">
+                                                        Voir</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="titreProjet">
+                                    <div class="item">
+                                        <ul id="maListe5">
+                                            <li>
+                                                <div class="heading-section">
+                                                    <h4>Application : <em>Open de Tennis </em></h4>
+                                                </div>
+                                                <p class="professionnel">
+                                                    Coté administrateur : Application permettant d'ajouter / mofifier /
+                                                    supprimer des matchs, des billets, ...
+                                                    <br>
+                                                    Coté client : Consulter le planning des matchs de tennis, de
+                                                    réserver des billets,...
+                                                    <br>
+                                                    Langages utilisés : Java | HTML | CSS | SQL
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <div class="main-border-button">
+                                                    <a id="lienVideo3" href="#" target="_blank"
+                                                        rel="noopener noreferrer">
+                                                        Voir</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+
+                                <div class="titreProjet">
+                                    <div class="item">
+                                        <ul id="maListe6">
+                                            <li>
+                                                <div class="heading-section">
+                                                    <h4>Application : <em>Détection d'images </em></h4>
+                                                </div>
+                                                <p class="professionnel">
+                                                    Application permettant de détecter les objets présent sur une image.
+                                                    <br>
+                                                    Langages utilisés : Python
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <div class="main-border-button">
+                                                    <a id="lienVideo" href="#" target="_blank"
+                                                        rel="noopener noreferrer">
+                                                        Voir</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div id="videoContainer">
+                                            <span id="fermerVideo">Fermer</span>
+                                            <video id="maVideo" width="800" height="400" controls>
+                                                <source src="./projets/appli.mp4" type="video/mp4">
+                                                Votre navigateur ne supporte pas la lecture de vidéos.
+                                            </video>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="titreProjet">
+                                    <div class="item">
+                                        <ul id="maListe7">
+                                            <li>
+                                                <div class="heading-section">
+                                                    <h4>Application :<em> Résolution d'un modèle épidémiologique SIR et
+                                                            quelques variantes </em></h4>
+                                                </div>
+                                                <p class="professionnel"> Développement d'une solution informatique qui
+                                                    nécessite de résoudre
+                                                    les équations d'un modèle épidémiologique SIR et quelques variantes.
+                                                    <br>
+                                                    Langages utilisés : C++ | Python (matplotlib)
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <div class="main-border-button">
+                                                    <a id="lienVideo2" href="#" target="_blank"
+                                                        rel="noopener noreferrer">
+                                                        Voir</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div id="videoContainer2">
+                                            <span id="fermerVideo2">Fermer</span>
+                                            <video id="maVideo2" width="800" height="400" controls>
+                                                <source src="./projets/videoVarianteSIR_1.mp4" type="video/mp4">
+                                                Votre navigateur ne supporte pas la lecture de vidéos.
+                                            </video>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <script>
+                                    function changerStyleListe() {
+                                        const largeurPage = window.innerWidth;
+
+                                        if (largeurPage < 600) {
+                                            // Sélectionnez les éléments qui correspondent au sélecteur CSS
+                                            const items = document.querySelectorAll('.gaming-library .item ul li');
+
+                                            items.forEach(item => {
+                                                item.style.display = 'block';
+                                                item.style.width = '100%';
+                                            });
+
+                                            // Sélectionnez le dernier enfant de chaque liste et modifiez son style
+                                            const dernierEnfantLi1 = document.querySelector('#maListe1 li:last-child');
+                                            const dernierEnfantLi2 = document.querySelector('#maListe2 li:last-child');
+                                            const dernierEnfantLi3 = document.querySelector('#maListe3 li:last-child');
+                                            const dernierEnfantLi4 = document.querySelector('#maListe4 li:last-child');
+                                            const dernierEnfantLi5 = document.querySelector('#maListe5 li:last-child');
+                                            const dernierEnfantLi6 = document.querySelector('#maListe6 li:last-child');
+                                            const dernierEnfantLi7 = document.querySelector('#maListe7 li:last-child');
+
+
+                                            if (dernierEnfantLi1) {
+                                                dernierEnfantLi1.style.textAlign = 'center';
+                                            }
+                                            if (dernierEnfantLi2) {
+                                                dernierEnfantLi2.style.textAlign = 'center';
+                                            }
+                                            if (dernierEnfantLi3) {
+                                                dernierEnfantLi3.style.textAlign = 'center';
+                                            }
+                                            if (dernierEnfantLi4) {
+                                                dernierEnfantLi4.style.textAlign = 'center';
+                                            }
+                                            if (dernierEnfantLi5) {
+                                                dernierEnfantLi5.style.textAlign = 'center';
+                                            }
+                                            if (dernierEnfantLi6) {
+                                                dernierEnfantLi6.style.textAlign = 'center';
+                                            }
+                                            if (dernierEnfantLi7) {
+                                                dernierEnfantLi7.style.textAlign = 'center';
+                                            }
+                                        }
+                                    }
+
+
+                                    // Écouter les événements de redimensionnement de la fenêtre pour mettre à jour le style
+                                    window.addEventListener('resize', changerStyleListe);
+
+                                    // Appeler la fonction au chargement de la page pour gérer le style initial
+                                    changerStyleListe();
+                                </script>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ***** Featured Games End ***** -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Scripts -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/popup.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/video.js"></script>
+    <script src="assets/js/videoPop.js"></script>
 
 </body>
 
