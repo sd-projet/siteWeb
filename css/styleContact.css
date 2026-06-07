@@ -1,0 +1,170 @@
+/* Styles personnalisés pour le formulaire de contact */
+.contact-form-container {
+    padding: 20px 0;
+}
+
+.custom-contact-form {
+    margin-top: 3rem;
+    width: 100%;
+}
+
+/* Style de chaque conteneur de champ */
+.custom-contact-form .form-field {
+    margin-bottom: 2.4rem; /* Espace entre les champs */
+}
+
+/* Style des inputs et du textarea */
+.custom-contact-form input[type="text"],
+.custom-contact-form input[type="email"],
+.custom-contact-form textarea {
+    width: 100%;
+    padding: 1.8rem 2rem;
+    background-color: #f2f2f2; /* Fond gris clair comme sur votre image */
+    border: 1px solid #e2e2e2;
+    border-radius: 4px; /* Légers arrondis */
+    color: #333333;
+    font-family: inherit;
+    font-size: 1.6rem;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+    box-sizing: border-box;
+}
+
+/* Effet au clic (Focus) - Rappel du doré de votre titre */
+.custom-contact-form input[type="text"]:focus,
+.custom-contact-form input[type="email"]:focus,
+.custom-contact-form textarea:focus {
+    background-color: #ffffff;
+    border-color: #d1a14c; /* Couleur dorée */
+    box-shadow: 0 0 8px rgba(209, 161, 76, 0.2);
+}
+
+/* Ajustement spécifique pour le textarea */
+.custom-contact-form textarea {
+    resize: vertical; /* Permet à l'utilisateur d'agrandir seulement en hauteur */
+    min-height: 160px;
+}
+
+/* Responsive : ajustements sur mobile */
+@media screen and (max-width: 800px) {
+    .custom-contact-form input[type="text"],
+    .custom-contact-form input[type="email"],
+    .custom-contact-form textarea {
+        padding: 1.5rem;
+    }
+}
+
+/* Style de la boîte modale (arrière-plan) */
+.custom-modal {
+    display: none; /* Caché par défaut */
+    position: fixed;
+    zIndex: 9999; /* Toujours au-dessus du reste */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Fond sombre transparent */
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(4px); /* Effet de flou en arrière-plan */
+    animation: fadeIn 0.3s ease-out;
+}
+
+/* Contenu de la modale */
+.modal-content {
+    background-color: #ffffff;
+    padding: 4rem 3rem;
+    border-radius: 8px;
+    max-width: 450px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    animation: scaleUp 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Icône verte de succès */
+.modal-icon {
+    width: 60px;
+    height: 60px;
+    background-color: #e6f7ed;
+    color: #2ecc71;
+    font-size: 3rem;
+    line-height: 60px;
+    border-radius: 50%;
+    margin: 0 auto 2rem auto;
+    font-weight: bold;
+}
+
+.modal-content h2 {
+    color: #333333;
+    margin-bottom: 1rem;
+    font-size: 2.8rem;
+}
+
+.modal-content p {
+    color: #666666;
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+}
+
+.modal-content .btn {
+    width: 100%;
+    max-width: 150px;
+    margin: 0 auto;
+}
+
+/* Animations d'apparition */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes scaleUp {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+
+/* Conteneur des icônes réseaux */
+.social-icons-container {
+    display: flex;
+    gap: 2.5rem;
+}
+
+/* Style de base du lien (Icône + Texte) */
+.social-icon-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+    color: #d1a14c; /* Couleur grise par défaut de votre texte */
+    font-weight: 600;
+    font-size: 1.6rem;
+    transition: all 0.3s ease;
+}
+
+/* Style de l'icône SVG */
+.social-icon-link svg {
+    transition: transform 0.3s ease, fill 0.3s ease;
+}
+
+/* Effets au survol (Hover) */
+.social-icon-link:hover {
+    transform: translateY(-2px); /* Léger saut vers le haut */
+}
+
+/* Hover spécifique LinkedIn (Bleu officiel) */
+.social-icon-link[aria-label="LinkedIn"]:hover {
+    color: #0077b5;
+}
+.social-icon-link[aria-label="LinkedIn"]:hover svg {
+    fill: #0077b5;
+}
+
+/* Hover spécifique GitHub (Noir ou Doré selon votre charte) */
+.social-icon-link[aria-label="GitHub"]:hover {
+    color: #1d1c1c; /* Rappel du doré du titre */
+}
+.social-icon-link[aria-label="GitHub"]:hover svg {
+    fill: #1d1c1c;
+}
