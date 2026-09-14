@@ -17,6 +17,7 @@
     ================================================== -->
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styleVideo.css">
 </head>
 <body id="top">
 
@@ -225,9 +226,12 @@
                                 <div class="grid-list-items__item list-items__item">
                                     <div class="list-items__item-header">
                                         <h3 class="list-items__item-title">
-                                            <a href="https://github.com/sd-projet/Algo-SIRModel" target="_blank"> Résolution d'un modèle épidémiologique</a>
+                                            <a href="https://github.com/sd-projet/Algo-SIRModel" target="_blank">
+                                                Résolution d'un modèle épidémiologique
+                                            </a>
                                         </h3>
                                     </div>
+
                                     <div class="list-items__item-text">
                                         <p>
                                             Développement d’une solution de calcul scientifique permettant de résoudre numériquement 
@@ -236,15 +240,35 @@
                                             sous forme de graphiques.
                                         </p>
 
-                                        <p>Voir la démo</p>
+                                        <p>
+                                            <a href="#" onclick="openVideo(event)">▶ Voir la démo</a>
+                                        </p>
 
                                         <ul class="list-services">
                                             <li>C++</li>
                                             <li>Python</li>
-                                            <li>Matplolib | Gnuplot</li>
+                                            <li>Matplotlib | Gnuplot</li>
                                         </ul>
                                     </div>
-                                </div> <!-- end list-items__item -->
+                                </div>
+
+                                <!-- Fenêtre vidéo -->
+                                <div id="videoModal" class="video-modal" onclick="closeVideo(event)">
+                                    <div class="video-modal-content">
+                                        <button class="video-close" onclick="closeVideo(event)">&times;</button>
+
+                                        <div class="video-container">
+                                            <iframe
+                                                src="https://www.youtube.com/embed/m2990bFUrsw"
+                                                title="Démonstration du modèle épidémiologique"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                allowfullscreen>
+                                            </iframe>
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <div class="grid-list-items__item list-items__item">
                                     <div class="list-items__item-header">
                                         <h3 class="list-items__item-title">
@@ -282,6 +306,6 @@
     ================================================== -->
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-
+    <script src="js/video.js"></script>
 </body>
 </html>
