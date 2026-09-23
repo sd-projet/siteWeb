@@ -168,3 +168,149 @@
 .social-icon-link[aria-label="GitHub"]:hover svg {
     fill: #1d1c1c;
 }
+
+/* css footer coordonnee */
+
+.site-footer {
+width: 100%;
+background: #ffffff;
+border-top: 1px solid #eaeaea;
+margin-top: 80px;
+padding: 50px 6vw 20px;
+color: #333;
+}
+
+.site-footer-main {
+max-width: 1100px;
+margin: 0 auto;
+display: grid;
+grid-template-columns: 1.5fr 1fr 1fr;
+gap: 60px;
+padding-bottom: 40px;
+}
+
+/* Nom et métier */
+.site-footer-brand h3 {
+margin: 0 0 10px;
+font-size: 20px;
+font-weight: 600;
+color: #222;
+}
+
+.site-footer-brand p {
+margin: 0;
+font-size: 14px;
+color: #777;
+}
+
+/* Titres */
+.site-footer-contact h4,
+.site-footer-links h4 {
+margin: 0 0 15px;
+font-size: 14px;
+font-weight: 600;
+color: #222;
+}
+
+/* Coordonnées */
+.site-footer-contact {
+display: flex;
+flex-direction: column;
+gap: 8px;
+}
+
+.site-footer-contact a,
+.site-footer-contact span {
+font-size: 14px;
+}
+
+.site-footer-contact a {
+color: #cb7c3e;
+text-decoration: none;
+transition: color 0.2s ease;
+}
+
+.site-footer-contact a:hover {
+color: #a85f2c;
+}
+
+/* Navigation */
+.site-footer-links {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 8px;
+}
+
+.site-footer-links a {
+font-size: 14px;
+color: #666;
+text-decoration: none;
+transition: color 0.2s ease;
+}
+
+.site-footer-links a:hover {
+color: #cb7c3e;
+}
+
+/* Bas du footer */
+.site-footer-bottom {
+max-width: 1100px;
+margin: 0 auto;
+padding-top: 18px;
+border-top: 1px solid #eeeeee;
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+font-size: 12px;
+color: #999;
+
+}
+
+.site-footer-socials {
+display: flex;
+align-items: center;
+gap: 15px;
+}
+
+.social-icon-link {
+display: flex;
+align-items: center;
+justify-content: center;
+color: #666;
+transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.social-icon-link:hover {
+color: #cb7c3e;
+transform: translateY(-2px);
+}
+
+
+/* Mobile */
+@media screen and (max-width: 700px) {
+
+.site-footer {
+    margin-top: 50px;
+    padding: 40px 6vw 20px;
+}
+
+.site-footer-main {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding-bottom: 30px;
+}
+
+.site-footer-links {
+    align-items: flex-start;
+}
+
+.site-footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+}
+
+}
