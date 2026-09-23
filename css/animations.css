@@ -1,0 +1,195 @@
+/* =====================================================
+   ANIMATIONS - PAGE ACCUEIL
+   ===================================================== */
+
+.home-reveal {
+    opacity: 0;
+    transform: translateY(25px);
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+.home-reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Délais de l'introduction */
+
+.home-reveal-delay-1 {
+    transition-delay: 0.15s;
+}
+
+.home-reveal-delay-2 {
+    transition-delay: 0.3s;
+}
+
+.home-reveal-delay-3 {
+    transition-delay: 0.45s;
+}
+
+
+/* =====================================================
+   PROJETS
+   ===================================================== */
+
+.home-project-reveal {
+    opacity: 0;
+    transform: translateY(25px);
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s ease;
+}
+
+.home-project-reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Petit effet au survol */
+
+.home-project-reveal {
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s ease,
+        padding-left 0.25s ease;
+}
+
+.home-project-reveal:hover {
+    padding-left: 8px;
+}
+
+.home-project-reveal:hover {
+    transform: translateY(-3px);
+}
+
+
+/* =====================================================
+   LIENS SOCIAUX
+   ===================================================== */
+
+.site-footer .social-icon-link {
+    transition:
+        transform 0.25s ease,
+        color 0.25s ease;
+}
+
+.site-footer .social-icon-link:hover {
+    transform: translateY(-3px);
+    color: #cb7c3e;
+}
+
+
+/* =====================================================
+   ACCESSIBILITÉ
+   ===================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .home-reveal,
+    .home-project-reveal,
+    .site-footer .social-icon-link {
+        transition: none;
+        transform: none;
+        opacity: 1;
+    }
+}
+
+/* =====================================================
+   ANIMATIONS - PAGE CV
+   ===================================================== */
+
+.cv-reveal {
+    opacity: 0;
+    transform: translateY(25px);
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+.cv-reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* =====================================================
+   EXPÉRIENCES
+   ===================================================== */
+
+.cv-experience {
+    opacity: 0;
+    transform: translateY(25px);
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s ease;
+}
+
+.cv-experience.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Petit décalage entre les expériences */
+
+.cv-experience:nth-of-type(1) {
+    transition-delay: 0.05s;
+}
+
+.cv-experience:nth-of-type(2) {
+    transition-delay: 0.1s;
+}
+
+.cv-experience:nth-of-type(3) {
+    transition-delay: 0.15s;
+}
+
+.cv-experience:nth-of-type(4) {
+    transition-delay: 0.2s;
+}
+
+.cv-experience:nth-of-type(5) {
+    transition-delay: 0.25s;
+}
+
+.cv-experience:nth-of-type(6) {
+    transition-delay: 0.3s;
+}
+
+
+/* =====================================================
+   TIMELINE
+   ===================================================== */
+
+.cv-reveal .input-flex-container {
+    opacity: 0;
+    transform: translateY(20px);
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+.cv-reveal.is-visible .input-flex-container {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* =====================================================
+   ACCESSIBILITÉ
+   ===================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .cv-reveal,
+    .cv-experience,
+    .cv-reveal .input-flex-container {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}

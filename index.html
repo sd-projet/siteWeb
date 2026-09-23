@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/styleContact.css">
+    <link rel="stylesheet" href="css/animations.css">
+
 </head>
 
 
@@ -83,7 +85,7 @@
 
                     <div class="column lg-12 s-intro__content-inner grid-block">
 
-                        <div class="s-intro__content-text">
+                        <div class="s-intro__content-text home-reveal home-reveal-delay-1">
                             <div class="s-intro__content-pretitle text-pretitle">Heyy, je suis Senebou DIARRA</div>
                             <h1 class="s-intro__content-title">
                                 Bienvenue sur mon site !<br>
@@ -101,7 +103,7 @@
                             <br>
                         </div> <!-- s-intro__content-text -->
 
-                        <div class="s-intro__content-media">
+                        <div class="s-intro__content-media home-reveal home-reveal-delay-2">
                             <div class="s-intro__content-media-inner">
                                 <img src="images/back.png" alt="">
                                 <div class="lines">
@@ -110,7 +112,7 @@
                             </div>
                         </div> <!-- s-intro__content-media -->
 
-                        <div class="s-intro__scroll-down">
+                        <div class="s-intro__scroll-down home-reveal home-reveal-delay-3">
                             <a href="#about" class="smoothscroll">
                                 <div class="scroll-icon">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36"
@@ -149,7 +151,7 @@
                         <div class="s-expertise__content-main grid-section-split__primary">
 
                             <div class="grid-list-items list-items show-ctr">
-                                <div class="grid-list-items__item list-items__item">
+                                <div class="grid-list-items__item list-items__item home-project-reveal">
                                     <div class="grid-list-items__title list-items__item-header">
                                         <h3 class="list-items__item-title">
                                             <a class="list-items__item-title" href="https://booking-saas-ten-zeta.vercel.app/" target="_blank"> SlotLance </a>
@@ -163,7 +165,7 @@
                                         </p>
                                     </div>
                                 </div> <!-- list-item -->
-                                <div class="grid-list-items__item list-items__item">
+                                <div class="grid-list-items__item list-items__item home-project-reveal">
                                     <div class="grid-list-items__title list-items__item-header">
                                         <h3 class="list-items__item-title">
                                             <a class="list-items__item-title" href="https://github.com/sd-projet/Algo-SIRModel" target="_blank"> Résolution d'un modèle épidémiologique </a>
@@ -176,7 +178,7 @@
                                         </p>
                                     </div>
                                 </div> <!-- list-expertise__item -->
-                                <div class="grid-list-items__item list-items__item">
+                                <div class="grid-list-items__item list-items__item home-project-reveal">
                                     <div class="grid-list-items__title list-items__item-header">
                                         <h3 class="list-items__item-title">
                                             <a class="list-items__item-title" href="https://blogbys.onrender.com" target="_blank"> BlogbyS </a>
@@ -212,7 +214,7 @@
             <div class="row row-x-center text-center">
                 <div class="column xl-8 lg-12">
 
-                    <div class="s-cta__content">
+                    <div class="s-cta__content home-reveal">
                         <h2 class="text-display-title">
                             Quelques réalisations ...
                         </h2>
@@ -230,7 +232,7 @@
         </section> <!-- end s-cta -->
     </div> <!-- end page-wrap -->
 
-    <footer class="site-footer">
+    <footer class="site-footer home-reveal">
         <div class="site-footer-main">
             <div class="site-footer-brand">
                 <h3>Senebou DIARRA</h3>
@@ -282,6 +284,41 @@
     ================================================== -->
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+
+    <script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const animatedElements = document.querySelectorAll(
+        ".home-reveal, .home-project-reveal"
+    );
+
+    const observer = new IntersectionObserver(
+        (entries, observer) => {
+
+            entries.forEach((entry) => {
+
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("is-visible");
+                    observer.unobserve(entry.target);
+                }
+
+            });
+
+        },
+        {
+            threshold: 0.15
+        }
+    );
+
+    animatedElements.forEach((element) => {
+        observer.observe(element);
+    });
+
+});
+</script>
 
 </body>
 
