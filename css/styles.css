@@ -4062,7 +4062,7 @@ td:last-child {
  *
  * ------------------------------------------------------------------- */
 .s-cta {
-	padding-top     : var(--vspace-4_5);
+	/*padding-top     : var(--vspace-4_5);*/
 	padding-bottom  : var(--vspace-3_5);
 	background-color: var(--color-2-dark);
 	color           : var(--color-3);
@@ -4090,6 +4090,12 @@ td:last-child {
 	.s-cta__content .btn {
 		width       : 100%;
 		margin-right: 0;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.s-cta {
+		padding-top     : 0;
 	}
 }
 
