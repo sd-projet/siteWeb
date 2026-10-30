@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/styleVideo.css">
     <link rel="stylesheet" href="css/styleContact.css">
+    <link rel="stylesheet" href="css/styleProjets.css">
 
 </head>
 <body id="top">
@@ -90,214 +91,173 @@
 
                <section class="s-pagecontent pagecontent">
                     <div class="row">
-                        <div class="column xl-12 grid-block">
+                        <div class="column xl-12">
 
-                            <div class="grid-full grid-list-items list-items show-ctr">
+                            <div class="projects-grid">
 
-                                <div class="grid-list-items__item list-items__item">
-                                    <div class="list-items__item-header">
-                                        <h3 class="list-items__item-title">
-                                            <a href="https://booking-saas-ten-zeta.vercel.app/" target="_blank"> SlotLance </a>
-                                        </h3>
-                                    </div>
-                                    <div class="list-items__item-text">
-                                        <p>
-                                            Application SaaS de réservation en ligne permettant aux professionnels de créer une page publique de réservation, configurer leurs disponibilités et gérer leurs rendez-vous.                                        </p>
-
-                                        <ul class="list-services">
-                                            <li>Next.js | TypeScript | Tailwind CSS</li>
-                                            <li>PostgreSQL | Prisma</li>
-                                            <li>Auth.js | Resend</li>
+                                <!-- SlotLance -->
+                                <article class="project-card">
+                                    <a class="project-card__media" href="https://booking-saas-ten-zeta.vercel.app/" target="_blank" rel="noopener" aria-label="Voir le projet SlotLance">
+                                        <img src="images/projets/slotlance.png" alt="Capture d'écran de SlotLance" loading="lazy" onerror="this.style.display='none'">
+                                        <div class="project-card__overlay"><span>Voir le projet ↗</span></div>
+                                    </a>
+                                    <div class="project-card__body">
+                                        <h3 class="project-card__title"><a href="https://booking-saas-ten-zeta.vercel.app/" target="_blank" rel="noopener">SlotLance</a></h3>
+                                        <ul class="project-card__tags">
+                                            <li>Next.js</li><li>TypeScript</li><li>Tailwind CSS</li><li>PostgreSQL</li><li>Prisma</li><li>Auth.js</li><li>Resend</li>
                                         </ul>
-                                    </div>
-                                </div> <!-- end list-items__item -->
-                                <div class="grid-list-items__item list-items__item">
-                                    <div class="list-items__item-header">
-                                        <h3 class="list-items__item-title">
-                                            <a href="https://myuniverse.onrender.com" target="_blank"> MyUniverse </a>
-                                        </h3>
-                                    </div>
-                                    <div class="list-items__item-text">
-                                        <p>
-                                            Application web développée avec Symfony permettant aux utilisateurs de créer leurs propres étoiles et constellations, de les personnaliser visuellement en 3D et de partager leurs créations avec la communauté.
-                                        </p>
-
-                                        <ul class="list-services">
-                                            <li>PHP | Symfony | Twig</li>
-                                            <li>Three.js</li>
-                                            <li>PostgreSQL</li>
-                                        </ul>
-                                    </div>
-                                </div> <!-- end list-items__item -->
-                                <div class="grid-list-items__item list-items__item">
-                                    <div class="list-items__item-header">
-                                        <h3 class="list-items__item-title">
-                                            <a href="https://shop-ecommerce-frontend-six.vercel.app/" target="_blank"> Shop-ecommerce</a>
-                                        </h3>
-                                    </div>
-                                    <div class="list-items__item-text">
-                                        <p>
-                                            Plateforme e-commerce : catalogue avec recherche et filtres, panier, tunnel de commande en 3 étapes,
-                                            espace client et back-office administrateur. Le backend suit une Clean Architecture (hexagonale) stricte,
-                                            vérifiée par des tests d'architecture.
-                                        </p>
-
-                                        <ul class="list-services">
-                                            <li>Java | Spring Boot</li>
-                                            <li>Next.js</li>
-                                            <li>PostgreSQL</li>
-                                        </ul>
-                                    </div>
-                                </div> <!-- end list-items__item -->
-
-                                <div class="grid-list-items__item list-items__item">
-                                    <div class="list-items__item-header">
-                                        <h3 class="list-items__item-title">
-                                            <a href="https://pyfiltres.vercel.app/" target="_blank"> Filtres</a>
-                                        </h3>
-                                    </div>
-                                    <div class="list-items__item-text">
-                                        <p>
-                                            Application de reconnaissance et de traitement vidéo permettant d'appliquer des filtres en 
-                                            temps réel à partir des mouvements et du visage de l'utilisateur.
-                                        </p>
-
-                                        <ul class="list-services">
-                                            <li>Python</li>
-                                            <li>mediapipe</li>
-                                            <li>Tensorflow</li>
-                                        </ul>
-                                    </div>
-                                </div> <!-- end list-items__item -->
-
-                                <div class="grid-list-items__item list-items__item">
-                                    <div class="list-items__item-header">
-                                        <h3 class="list-items__item-title">
-                                            <a href="https://blogbys.onrender.com" target="_blank"> BlogbyS</a>
-                                        </h3>
-                                    </div>
-                                    <div class="list-items__item-text">
-                                        <p>
-                                            Application web de type réseau social permettant aux utilisateurs de 
-                                            publier du contenu, d'interagir avec la communauté et de gérer leur profil.  
-                                        </p>
-
-                                        <ul class="list-services">
-                                            <li>PHP</li>
-                                            <li>MySQL | TiDB Cloud</li>
-                                            <li>HTML | CSS | JS | VueJS</li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                                <div class="grid-list-items__item list-items__item">
-                                    <div class="list-items__item-header">
-                                        <h3 class="list-items__item-title">
-                                            <a href="https://stockflow-three-steel.vercel.app" target="_blank"> Stockflow</a>
-                                        </h3>
-                                    </div>
-                                    <div class="list-items__item-text">
-                                        <p>
-                                            Application ERP de gestion des stocks permettant de centraliser la gestion des produits, 
-                                            fournisseurs, commandes et mouvements de stock. L’application propose une interface 
-                                            d’administration ainsi qu’un tableau de bord permettant de suivre l’activité et les principaux 
-                                            indicateurs de gestion.
-                                        </p>
-
-                                        <ul class="list-services">
-                                            <li>Java | Spring Boot</li>
-                                            <li>Angular | TypeScript</li>
-                                            <li>PostgreSQL</li>
-                                        </ul>
-                                    </div>
-                                </div> 
-
-                                <!--<div class="grid-list-items__item list-items__item"> A FAIRE
-                                    <div class="list-items__item-header">
-                                        <h3 class="list-items__item-title">
-                                            <a href="https://github.com/sd-projet/">JobFIKSI</a>
-                                        </h3>
-                                    </div>
-                                    <div class="list-items__item-text">
-                                        <p>
-                                            Dans le cadre d'un projet, j'ai du réaliser une application permettant le recrutement dans le secteur de la restauration (comme Indeed).
-                                        </p>
-
-                                        <ul class="list-services">
-                                            <li>Angular</li>
-                                            <li>Django</li>
-                                        </ul>
-                                    </div>
-                                </div>--> <!-- end list-items__item -->
-
-                                <!--<div class="grid-list-items__item list-items__item"> A FAIRE EN MIEUX
-                                    <div class="list-items__item-header">
-                                        <h3 class="list-items__item-title">
-                                            <a href="https://github.com/sd-projet/Bag-s" target="_blank">Bag's for life</a>
-                                        </h3>
-                                    </div>
-                                    <div class="list-items__item-text">
-                                        <p>
-                                            Dans le cadre d'un projet, j'ai du réaliser un site marchand non fonctionnel.
-                                        </p>
-
-                                        <ul class="list-services">
-                                            <li>HTML</li>
-                                            <li>CSS</li>
-                                        </ul>
-                                    </div>
-                                </div>--> <!-- end list-items__item -->
-
-                                <div class="grid-list-items__item list-items__item">
-                                    <div class="list-items__item-header">
-                                        <h3 class="list-items__item-title">
-                                            <a href="https://github.com/sd-projet/Algo-SIRModel" target="_blank">
-                                                Résolution d'un modèle épidémiologique
-                                            </a>
-                                        </h3>
-                                    </div>
-
-                                    <div class="list-items__item-text">
-                                        <p>
-                                            Développement d’une solution de calcul scientifique permettant de résoudre numériquement 
-                                            le modèle épidémiologique SIR ainsi que plusieurs de ses variantes. Le projet permet de simuler 
-                                            l’évolution d’une épidémie à partir de différents paramètres et de visualiser les résultats 
-                                            sous forme de graphiques.
-                                        </p>
-
-                                        <p>
-                                            <a href="#" onclick="openVideo(event)">▶ Voir la démo</a>
-                                        </p>
-
-                                        <ul class="list-services">
-                                            <li>C++</li>
-                                            <li>Python</li>
-                                            <li>Matplotlib | Gnuplot</li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                                <!-- Fenêtre vidéo -->
-                                <div id="videoModal" class="video-modal" onclick="closeVideo(event)">
-                                    <div class="video-modal-content">
-                                        <button class="video-close" onclick="closeVideo(event)">&times;</button>
-
-                                        <div class="video-container">
-                                            <iframe
-                                                src="https://www.youtube.com/embed/m2990bFUrsw"
-                                                title="Démonstration du modèle épidémiologique"
-                                                frameborder="0"
-                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                allowfullscreen>
-                                            </iframe>
+                                        <button type="button" class="project-card__toggle" aria-expanded="false">En savoir plus</button>
+                                        <div class="project-card__more">
+                                            <div class="project-card__more-inner">
+                                                <p>Application SaaS de réservation en ligne permettant aux professionnels de créer une page publique de réservation, configurer leurs disponibilités et gérer leurs rendez-vous.</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                </article>
 
-                            </div> <!-- grid-list-items -->
+                                <!-- MyUniverse -->
+                                <article class="project-card">
+                                    <a class="project-card__media" href="https://myuniverse.onrender.com" target="_blank" rel="noopener" aria-label="Voir le projet MyUniverse">
+                                        <img src="images/projets/myuniverse.png" alt="Capture d'écran de MyUniverse" loading="lazy" onerror="this.style.display='none'">
+                                        <div class="project-card__overlay"><span>Voir le projet ↗</span></div>
+                                    </a>
+                                    <div class="project-card__body">
+                                        <h3 class="project-card__title"><a href="https://myuniverse.onrender.com" target="_blank" rel="noopener">MyUniverse</a></h3>
+                                        <ul class="project-card__tags">
+                                            <li>PHP</li><li>Symfony</li><li>Twig</li><li>Three.js</li><li>PostgreSQL</li>
+                                        </ul>
+                                        <button type="button" class="project-card__toggle" aria-expanded="false">En savoir plus</button>
+                                        <div class="project-card__more">
+                                            <div class="project-card__more-inner">
+                                                <p>Application web développée avec Symfony permettant aux utilisateurs de créer leurs propres étoiles et constellations, de les personnaliser visuellement en 3D et de partager leurs créations avec la communauté.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- Shop-ecommerce -->
+                                <article class="project-card">
+                                    <a class="project-card__media" href="https://shop-ecommerce-frontend-six.vercel.app/" target="_blank" rel="noopener" aria-label="Voir le projet Shop-ecommerce">
+                                        <img src="images/projets/shop-ecommerce.png" alt="Capture d'écran de Shop-ecommerce" loading="lazy" onerror="this.style.display='none'">
+                                        <div class="project-card__overlay"><span>Voir le projet ↗</span></div>
+                                    </a>
+                                    <div class="project-card__body">
+                                        <h3 class="project-card__title"><a href="https://shop-ecommerce-frontend-six.vercel.app/" target="_blank" rel="noopener">Shop-ecommerce</a></h3>
+                                        <ul class="project-card__tags">
+                                            <li>Java</li><li>Spring Boot</li><li>Next.js</li><li>PostgreSQL</li>
+                                        </ul>
+                                        <button type="button" class="project-card__toggle" aria-expanded="false">En savoir plus</button>
+                                        <div class="project-card__more">
+                                            <div class="project-card__more-inner">
+                                                <p>Plateforme e-commerce : catalogue avec recherche et filtres, panier, tunnel de commande en 3 étapes, espace client et back-office administrateur. Le backend suit une Clean Architecture (hexagonale) stricte, vérifiée par des tests d'architecture.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- Filtres -->
+                                <article class="project-card">
+                                    <a class="project-card__media" href="https://pyfiltres.vercel.app/" target="_blank" rel="noopener" aria-label="Voir le projet Filtres">
+                                        <img src="images/projets/filtres.png" alt="Capture d'écran de Filtres" loading="lazy" onerror="this.style.display='none'">
+                                        <div class="project-card__overlay"><span>Voir le projet ↗</span></div>
+                                    </a>
+                                    <div class="project-card__body">
+                                        <h3 class="project-card__title"><a href="https://pyfiltres.vercel.app/" target="_blank" rel="noopener">Filtres</a></h3>
+                                        <ul class="project-card__tags">
+                                            <li>Python</li><li>mediapipe</li><li>Tensorflow</li>
+                                        </ul>
+                                        <button type="button" class="project-card__toggle" aria-expanded="false">En savoir plus</button>
+                                        <div class="project-card__more">
+                                            <div class="project-card__more-inner">
+                                                <p>Application de reconnaissance et de traitement vidéo permettant d'appliquer des filtres en temps réel à partir des mouvements et du visage de l'utilisateur.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- BlogbyS -->
+                                <article class="project-card">
+                                    <a class="project-card__media" href="https://blogbys.onrender.com" target="_blank" rel="noopener" aria-label="Voir le projet BlogbyS">
+                                        <img src="images/projets/blogbys.png" alt="Capture d'écran de BlogbyS" loading="lazy" onerror="this.style.display='none'">
+                                        <div class="project-card__overlay"><span>Voir le projet ↗</span></div>
+                                    </a>
+                                    <div class="project-card__body">
+                                        <h3 class="project-card__title"><a href="https://blogbys.onrender.com" target="_blank" rel="noopener">BlogbyS</a></h3>
+                                        <ul class="project-card__tags">
+                                            <li>PHP</li><li>MySQL</li><li>TiDB Cloud</li><li>HTML / CSS / JS</li><li>VueJS</li>
+                                        </ul>
+                                        <button type="button" class="project-card__toggle" aria-expanded="false">En savoir plus</button>
+                                        <div class="project-card__more">
+                                            <div class="project-card__more-inner">
+                                                <p>Application web de type réseau social permettant aux utilisateurs de publier du contenu, d'interagir avec la communauté et de gérer leur profil.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- Stockflow -->
+                                <article class="project-card">
+                                    <a class="project-card__media" href="https://stockflow-three-steel.vercel.app" target="_blank" rel="noopener" aria-label="Voir le projet Stockflow">
+                                        <img src="images/projets/stockflow.png" alt="Capture d'écran de Stockflow" loading="lazy" onerror="this.style.display='none'">
+                                        <div class="project-card__overlay"><span>Voir le projet ↗</span></div>
+                                    </a>
+                                    <div class="project-card__body">
+                                        <h3 class="project-card__title"><a href="https://stockflow-three-steel.vercel.app" target="_blank" rel="noopener">Stockflow</a></h3>
+                                        <ul class="project-card__tags">
+                                            <li>Java</li><li>Spring Boot</li><li>Angular</li><li>TypeScript</li><li>PostgreSQL</li>
+                                        </ul>
+                                        <button type="button" class="project-card__toggle" aria-expanded="false">En savoir plus</button>
+                                        <div class="project-card__more">
+                                            <div class="project-card__more-inner">
+                                                <p>Application ERP de gestion des stocks permettant de centraliser la gestion des produits, fournisseurs, commandes et mouvements de stock. L’application propose une interface d’administration ainsi qu’un tableau de bord permettant de suivre l’activité et les principaux indicateurs de gestion.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- Modèle SIR -->
+                                <article class="project-card">
+                                    <a class="project-card__media" href="https://github.com/sd-projet/Algo-SIRModel" target="_blank" rel="noopener" aria-label="Voir le projet sur GitHub : modèle épidémiologique">
+                                        <img src="images/projets/sir-model.png" alt="Capture d'écran du modèle épidémiologique SIR" loading="lazy" onerror="this.style.display='none'">
+                                        <div class="project-card__overlay"><span>Voir sur GitHub ↗</span></div>
+                                    </a>
+                                    <div class="project-card__body">
+                                        <h3 class="project-card__title"><a href="https://github.com/sd-projet/Algo-SIRModel" target="_blank" rel="noopener">Résolution d'un modèle épidémiologique</a></h3>
+                                        <ul class="project-card__tags">
+                                            <li>C++</li><li>Python</li><li>Matplotlib</li><li>Gnuplot</li>
+                                        </ul>
+                                        <button type="button" class="project-card__toggle" aria-expanded="false">En savoir plus</button>
+                                        <div class="project-card__more">
+                                            <div class="project-card__more-inner">
+                                                <p>Développement d’une solution de calcul scientifique permettant de résoudre numériquement le modèle épidémiologique SIR ainsi que plusieurs de ses variantes. Le projet permet de simuler l’évolution d’une épidémie à partir de différents paramètres et de visualiser les résultats sous forme de graphiques.</p>
+                                                <p><a href="#" onclick="openVideo(event)">▶ Voir la démo</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+
+                            </div> <!-- end projects-grid -->
+
+                            <!-- Fenêtre vidéo -->
+                            <div id="videoModal" class="video-modal" onclick="closeVideo(event)">
+                                <div class="video-modal-content">
+                                    <button class="video-close" onclick="closeVideo(event)">&times;</button>
+
+                                    <div class="video-container">
+                                        <iframe
+                                            src="https://www.youtube.com/embed/m2990bFUrsw"
+                                            title="Démonstration du modèle épidémiologique"
+                                            frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                </div>
+                            </div>
+
                             <a href="https://github.com/sd-projet/" class="btn btn--primary">La suite sur mon GitHub</a>
 
-                        </div> <!-- end grid-block-->
+                        </div> <!-- end column -->
                     </div> <!-- end row -->
                </section> <!-- pagecontent -->
         </section> <!-- s-content-->
@@ -327,7 +287,7 @@
                     class="social-icon-link" 
                     aria-label="LinkedIn">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
-                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.762 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.762 2.239 5 5 5h14c2.762 0 5-2.238 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
                         </svg>
                     </a>
 
@@ -357,5 +317,16 @@
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
     <script src="js/video.js"></script>
+    <script>
+        // Bouton "En savoir plus" : déplie / replie la description de la carte
+        document.querySelectorAll('.project-card__toggle').forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                var card = btn.closest('.project-card');
+                var open = card.classList.toggle('is-open');
+                btn.setAttribute('aria-expanded', open);
+                btn.textContent = open ? 'Réduire' : 'En savoir plus';
+            });
+        });
+    </script>
 </body>
 </html>
